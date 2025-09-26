@@ -76,3 +76,37 @@ document.addEventListener("DOMContentLoaded", () => {
 
   items.forEach(service => observer.observe(service));
 });
+
+// Fonction pour ouvrir un modal
+function openModal(id) {
+  const modal = document.getElementById(id);
+  if (modal) {
+    modal.style.display = "flex"; // affichage en flex pour centrer le contenu
+  }
+}
+
+// Fonction pour fermer un modal
+function closeModal(id) {
+  const modal = document.getElementById(id);
+  if (modal) {
+    modal.style.display = "none";
+  }
+}
+
+// Fermer le modal en cliquant en dehors du contenu
+window.addEventListener("click", function(event) {
+  if (event.target.classList.contains("modal")) {
+    event.target.style.display = "none";
+  }
+});
+
+// Fermer avec la touche Échap
+window.addEventListener("keydown", function(event) {
+  if (event.key === "Escape") {
+    const modals = document.querySelectorAll(".modal");
+    modals.forEach(modal => {
+      modal.style.display = "none";
+    });
+  }
+});
+

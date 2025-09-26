@@ -63,39 +63,118 @@
         
 
 <section class="services" id="NosServices">
-    <div class="title titleService">
-      <h3>Nos services</h3>
-    </div>
+  <div class="title titleService">
+    <h3>Nos services</h3>
+  </div>
 
-    <div class="carousel">
-      <div class="servicebox">
-        <div class="boxServ">
-          <div class="profil"><i class="fas fa-chart-line"></i></div>
-          <div class="text"><h2>Stratégie & accompagnement digital</h2></div>
-        </div>
+  <div class="carousel">
+    <div class="servicebox">
 
-        <div class="boxServ">
-          <div class="profil"><i class="fas fa-users"></i></div>
-          <div class="text"><h2>Gestion de réseaux sociaux</h2></div>
-        </div>
-
-        <div class="boxServ">
-          <div class="profil"><i class="fas fa-pencil-alt"></i></div>
-          <div class="text"><h2>Création de contenus marketing</h2></div>
-        </div>
-
-        <div class="boxServ">
-          <div class="profil"><i class="fas fa-bullhorn"></i></div>
-          <div class="text"><h2>Publicité digitale (sponsoring)</h2></div>
-        </div>
-
-        <div class="boxServ">
-          <div class="profil"><i class="fas fa-shopping-cart"></i></div>
-          <div class="text"><h2>Accompagnement e-commerce</h2></div>
+      <!-- Service 1 -->
+      <div class="boxServ" onclick="openModal('service1')">
+        <div class="profil"><i class="fas fa-chart-line"></i></div>
+        <div class="text">
+          <h2>Stratégie & accompagnement digital</h2>
         </div>
       </div>
+
+      <!-- Service 2 -->
+      <div class="boxServ" onclick="openModal('service2')">
+        <div class="profil"><i class="fas fa-users"></i></div>
+        <div class="text">
+          <h2>Gestion de réseaux sociaux</h2>
+        </div>
+      </div>
+
+      <!-- Service 3 -->
+      <div class="boxServ" onclick="openModal('service3')">
+        <div class="profil"><i class="fas fa-pencil-alt"></i></div>
+        <div class="text">
+          <h2>Création de contenus marketing</h2>
+        </div>
+      </div>
+
+      <!-- Service 4 -->
+      <div class="boxServ" onclick="openModal('service4')">
+        <div class="profil"><i class="fas fa-bullhorn"></i></div>
+        <div class="text">
+          <h2>Publicité digitale (sponsoring)</h2>
+        </div>
+      </div>
+
+      <!-- Service 5 -->
+      <div class="boxServ" onclick="openModal('service5')">
+        <div class="profil"><i class="fas fa-shopping-cart"></i></div>
+        <div class="text">
+          <h2>Accompagnement e-commerce</h2>
+        </div>
+      </div>
+
     </div>
-  </section>
+  </div>
+</section>
+
+<!-- ================= Modals ================= -->
+
+<!-- Modal 1 -->
+<div id="service1" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('service1')">&times;</span>
+    <h2>Stratégie & accompagnement digital</h2>
+    <p>
+      Nous vous aidons à définir et mettre en place une stratégie digitale adaptée à vos objectifs, 
+      incluant la transformation numérique, l’analyse de marché et l’accompagnement personnalisé.
+    </p>
+  </div>
+</div>
+
+<!-- Modal 2 -->
+<div id="service2" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('service2')">&times;</span>
+    <h2>Gestion de réseaux sociaux</h2>
+    <p>
+      Gestion complète de vos réseaux sociaux : création de contenu, planification, 
+      animation de communauté et suivi des performances.
+    </p>
+  </div>
+</div>
+
+<!-- Modal 3 -->
+<div id="service3" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('service3')">&times;</span>
+    <h2>Création de contenus marketing</h2>
+    <p>
+      Production de visuels, vidéos, articles et supports marketing 
+      engageants pour renforcer votre image de marque.
+    </p>
+  </div>
+</div>
+
+<!-- Modal 4 -->
+<div id="service4" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('service4')">&times;</span>
+    <h2>Publicité digitale (sponsoring)</h2>
+    <p>
+      Mise en place et optimisation de campagnes sponsorisées 
+      sur Facebook, Instagram, Google et autres plateformes pour maximiser votre ROI.
+    </p>
+  </div>
+</div>
+
+<!-- Modal 5 -->
+<div id="service5" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('service5')">&times;</span>
+    <h2>Accompagnement e-commerce</h2>
+    <p>
+      Conseil et accompagnement dans la création, gestion et optimisation 
+      de boutiques en ligne (Shopify, WooCommerce, Prestashop...).
+    </p>
+  </div>
+</div>
   
   <!-- contact -->
         <section class="contact" id="contact">
@@ -115,7 +194,7 @@
                 <div class="social">
                     <ul>
                         <li class="Whatsapp"><a href="https://whatsapp.com/channel/0029VbAhmTA1CYoPUaWZUT02 " target="_blank"><div><i class="fa-brands fa-whatsapp"></i></div>Whatsapp</a></li>
-                        <li class="Facebook"><a href="#"><div><i class="fa-brands fa-facebook"></i></div>Facebook</a></li>
+                        <li class="Facebook"><a href="https://www.facebook.com/profile.php?id=61577446141791" target="_blank"><div><i class="fa-brands fa-facebook"></i></div>Facebook</a></li>
                         <li class="Instagram"><a href="https://www.instagram.com/koperationmarket/?__pwa=1#" target="_blank"><div><i class="fa-brands fa-instagram"></i></div>Instagram</a></li>
                         <li class="tiktok"><a href="https://vm.tiktok.com/ZMHWAR5bXLb4N-Fx24j/" target="_blank"><div><i class="fa-brands fa-tiktok"></i></div>Tiktok</a></li>
                     </ul>
@@ -155,7 +234,7 @@
                         <div class="social2">
                     <ul>
                         <li><a href="https://whatsapp.com/channel/0029VbAhmTA1CYoPUaWZUT02 " target="_blank" class="Whatsapp"><i class="fa-brands fa-whatsapp"></i></a></li>
-                        <li><a href="#" class="Facebook"><i class="fa-brands fa-facebook"></i></a></li>
+                        <li><a href="https://www.facebook.com/profile.php?id=61577446141791" target="_blank" class="Facebook"><i class="fa-brands fa-facebook"></i></a></li>
                         <li><a href="https://www.instagram.com/koperationmarket/?__pwa=1#" target="_blank" class="Instagram"><i class="fa-brands fa-instagram"></i></a></li>
                         <li><a href="https://vm.tiktok.com/ZMHWAR5bXLb4N-Fx24j/" target="_blank" class="tiktok"><i class="fa-brands fa-tiktok"></i></a></li>
                     </ul>
