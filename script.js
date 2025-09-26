@@ -15,12 +15,12 @@ btnMenuFermeture.addEventListener("click",() => {
 
 // tableau des images
 const imagesHero = [
-    "images/hero/1.jpeg",
-    "images/hero/2.jpeg",
-    "images/hero/3.jpeg",
-    "images/hero/4.jpeg",
-    "images/hero/5.jpeg",
-    "images/hero/6.jpeg"
+    "images/hero/1.jpg",
+    "images/hero/2.jpg",
+    "images/hero/3.jpg",
+    "images/hero/4.jpg",
+    "images/hero/5.jpg",
+    "images/hero/6.jpg"
 ];
 
 let indexHero = 0;
