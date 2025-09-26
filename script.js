@@ -38,3 +38,41 @@ function changeHeroImgage() {
 }
 
 setInterval(changeHeroImgage,3000);
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  const track = document.querySelector(".servicebox");
+  const items = document.querySelectorAll(".boxServ");
+  let index = 0;
+  let visible = window.innerWidth > 850 ? 3 : 1; // 3 en desktop, 1 en mobile
+
+  // Fonction de slide automatique
+  function slide() {
+    index++;
+    if (index > items.length - visible) {
+      index = 0;
+    }
+    track.style.transform = `translateX(-${index * (100 / visible)}%)`;
+  }
+
+  setInterval(slide, 3000); // défile toutes les 3s
+
+  // Recalculer si resize
+  window.addEventListener("resize", () => {
+    visible = window.innerWidth > 850 ? 3 : 1;
+    index = 0;
+    track.style.transform = "translateX(0)";
+  });
+
+  // Animation au scroll (IntersectionObserver)
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("show");
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.2 });
+
+  items.forEach(service => observer.observe(service));
+});
