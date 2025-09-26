@@ -103,7 +103,7 @@
                 <h2>Nous contacter</h2>
             </div>
             <div class="contact00">
-                <form id="contact-form">
+                <form>
                     <label for="name">Nom</label>
                     <input type="text" id="name" name="name" placeholder="Votre nom" required>
                     <label for="email">Email</label>
@@ -114,10 +114,10 @@
                 </form>
                 <div class="social">
                     <ul>
-                        <li class="Whatsapp"><a href="#"><div><i class="fa-brands fa-whatsapp"></i></div>Whatsapp</a></li>
+                        <li class="Whatsapp"><a href="https://whatsapp.com/channel/0029VbAhmTA1CYoPUaWZUT02 " target="_blank"><div><i class="fa-brands fa-whatsapp"></i></div>Whatsapp</a></li>
                         <li class="Facebook"><a href="#"><div><i class="fa-brands fa-facebook"></i></div>Facebook</a></li>
-                        <li class="Instagram"><a href="#"><div><i class="fa-brands fa-instagram"></i></div>Instagram</a></li>
-                        <li class="LinkedIn"><a href="#"><div><i class="fa-brands fa-linkedin"></i></div>LinkedIn</a></li>
+                        <li class="Instagram"><a href="https://www.instagram.com/koperationmarket/?__pwa=1#" target="_blank"><div><i class="fa-brands fa-instagram"></i></div>Instagram</a></li>
+                        <li class="tiktok"><a href="https://vm.tiktok.com/ZMHWAR5bXLb4N-Fx24j/" target="_blank"><div><i class="fa-brands fa-tiktok"></i></div>Tiktok</a></li>
                     </ul>
                 </div>
         </div>
@@ -154,10 +154,10 @@
                         
                         <div class="social2">
                     <ul>
-                        <li><a href="#" class="Whatsapp"><i class="fa-brands fa-whatsapp"></i></a></li>
+                        <li><a href="https://whatsapp.com/channel/0029VbAhmTA1CYoPUaWZUT02 " target="_blank" class="Whatsapp"><i class="fa-brands fa-whatsapp"></i></a></li>
                         <li><a href="#" class="Facebook"><i class="fa-brands fa-facebook"></i></a></li>
-                        <li><a href="#" class="Instagram"><i class="fa-brands fa-instagram"></i></a></li>
-                        <li><a href="#" class="LinkedIn"><i class="fa-brands fa-linkedin"></i></a></li>
+                        <li><a href="https://www.instagram.com/koperationmarket/?__pwa=1#" target="_blank" class="Instagram"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="https://vm.tiktok.com/ZMHWAR5bXLb4N-Fx24j/" target="_blank" class="tiktok"><i class="fa-brands fa-tiktok"></i></a></li>
                     </ul>
                 </div>
                     </div>
@@ -168,24 +168,5 @@
                 </div>
           </footer>
            <!-- footer -->
-
-           <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-            <script>
-            (function(){
-                emailjs.init("oovgCObhnn4Dql8oB"); // 🔑 remplace par ta clé publique
-            })();
-
-            document.getElementById('contact-form').addEventListener('submit', function(event) {
-                event.preventDefault();
-
-                emailjs.sendForm('service_5utkytn', 'template_2s81odn', this)
-                    .then(function() {
-                    alert('✅ Message envoyé avec succès !');
-                    }, function(error) {
-                    alert('❌ Erreur: ' + JSON.stringify(error));
-                    });
-            });
-            </script>
-
 </body>
 </html>
