@@ -740,12 +740,21 @@ textarea:focus{
 }
 
 /* Responsive */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     .shop {
         padding: 20px;
     }
+    .shop_box{
+        grid-template-columns: repeat(2, 1fr);
+    }
     .shop_box .box img {
         height: 200px;
+    }
+    .shop_box .box{
+        height: 200px;
+    }
+    .shop_box .box h3 {
+        display: none;
     }
 }
 
